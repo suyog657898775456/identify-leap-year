@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class conditionalstate {
+    public static void main(String argn[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Year");
+
+        int year = sc.nextInt();
+
+        if (year % 4 != 0) {
+            System.out.println("Not Leap Year");
+        } else {
+            if (year % 100 != 0) {
+                System.out.println("This year is leap year");
+            } else {
+                if (year % 400 != 0) {
+                    System.out.println("Not leap year");
+
+                } else {
+                    System.out.println("The Leap Year");
+                }
+
+            }
+        }
+
+    }
+
+}
